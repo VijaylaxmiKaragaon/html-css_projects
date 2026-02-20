@@ -1,0 +1,106 @@
+#home {
+  #title {
+    img {
+      width: 25%;
+      height: 300px;
+    }
+    h1 {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      color: blue;
+    }
+  }
+  #logo1 {
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: brown;
+    }
+  }
+}
+
+#contact {
+  background-color: rgb(131, 206, 206);
+  #title1 {
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(240, 59, 59);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  #inp1 {
+    text-align: center;
+    color: black;
+    background-color: rgb(225, 225, 145);
+    border-color: black;
+  }
+  #inp2 {
+    text-align: center;
+    color: black;
+    background-color: rgb(225, 225, 145);
+    border-color: black;
+  }
+  #btn {
+    background-color: rgb(41, 104, 231);
+    text-decoration: none;
+    font-weight: bold;
+    width: 10%;
+    height: 20px;
+  }
+  #btn1 {
+    background-color: rgb(216, 46, 46);
+    text-decoration: none;
+    font-weight: bold;
+    width: 5%;
+    height: 20px;
+  }
+}
+
+#aboutme {
+  background-color: antiquewhite;
+  img {
+    width: 25%;
+    height: 300px;
+  }
+  #education {
+    #h1 {
+      color: blue;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+
+  #h2 {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #h3 {
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  #h34 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-transform: capitalize;
+  }
+  #h4 {
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  #h5 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  #h6 {
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  #h7 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  #h8 {
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
