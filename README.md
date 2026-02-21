@@ -1,20 +1,16 @@
-# HTML & CSS Assignment 1
+# HTML & CSS Projects
 
-This project contains a simple personal portfolio website built using HTML and CSS.
+This repository contains frontend projects built using HTML and CSS.
 
-## 📂 Pages Included
-- **home.html** – Introduction page
-- **aboutme.html** – Education and Projects details
-- **contactme.html** – Contact form
-- **thank.html** – Thank you response page
-- **home.css** – Styling file
+## 📂 Projects Included
+
+### 1️⃣ Assignment 1 – Personal Portfolio
+A simple multi-page portfolio website with navigation and contact form.
+
+### 2️⃣ EatFit Blog Clone
+A frontend clone of the EatFit Blog homepage with styled cards and navigation.
 
 ## 🛠 Technologies Used
 - HTML5
 - CSS3
-
-## 🎯 Features
-- Multi-page navigation
-- Contact form with validation
-- Basic responsive structure
-- Clean and simple UI design
+- Font Awesome
