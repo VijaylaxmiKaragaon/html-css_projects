@@ -1,0 +1,177 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.project{
+    padding:0px  60px 60px 60px;
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        border-bottom: 1px black solid;
+        align-items: center;
+        margin-top: 10px;
+        a{
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black;
+            font-size: 20px;
+            text-transform: capitalize;
+            text-decoration: none;
+            margin: 0px 15px;
+        }
+        #home{
+            margin-left: 40px;
+            padding-left: 250px;
+        }
+        .logo{
+            font-size: 20px;
+            margin-right: 60px;
+        }
+    }
+    .title{
+        
+         text-align: center;
+         color: rgb(2, 2, 93);
+        font-size: 60px;
+        height: 100px;
+        margin: 60px 0 30px 0;
+        #h1title{
+            text-align: center;
+            text-decoration: none;
+            font-weight: bolder;
+            color: rgb(3, 3, 81);
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        }
+    }
+    .subnavbar{
+        text-transform: capitalize;
+        font-size: 20px;
+        display: flex;
+        height: 40px;
+        border-bottom: 1px black solid;
+        justify-content: space-evenly;
+        gap: 10px;
+        a{
+            text-decoration: none;
+            color: rgb(46, 44, 44);
+           font-weight: bolder;
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        /* gap: 5px; */
+        .card1{
+            /* border: 1px black solid; */
+            width: 30%;
+            img{
+            width: 100%;
+            height: auto;
+            }
+            #cardh1{
+                padding: 10px;
+                font-size: 20px;
+                text-align: justify;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            p{
+                font-size: 15px;
+                text-align: justify;
+                padding: 10px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #readmore{
+                padding: 10px;
+                color: red;
+                text-transform: capitalize;
+                text-decoration: none;
+            }
+            #date{
+                margin-top: 10px;
+                border-top: 1px red solid;
+                
+                font-size: 15px;
+                padding: 10px;
+                color: rgb(45, 43, 43);
+            }
+        }
+    }
+ .cards2{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        /* gap: 5px; */
+        .card1{
+            /* border: 1px black solid; */
+            width: 30%;
+            img{
+            width: 100%;
+            height: auto;
+            }
+            #cardh1{
+                padding: 10px;
+                font-size: 20px;
+                text-align: justify;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            p{
+                font-size: 15px;
+                text-align: justify;
+                padding: 10px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #readmore{
+                padding: 10px;
+                color: red;
+                text-transform: capitalize;
+                text-decoration: none;
+            }
+            #date{
+                margin-top: 10px;
+                border-top: 1px red solid;
+                
+                font-size: 15px;
+                padding: 10px;
+                color: rgb(45, 43, 43);
+            }
+            
+        }
+    }
+
+    .footer{
+        background-color: rgb(3, 3, 59);
+        text-align: center;
+        color: white;
+        height: 150px;
+        padding:10px 80px 80px  80px;
+        
+        align-items: center;
+        #hippo{
+            height: 40px;
+            font-size: 40px;
+        }
+        #ftrh1{
+            font-size: 40px;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+        }
+        
+        h2{
+            padding-top: 20px;
+            border-top: 1px white solid;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            text-align: center;
+        }
+       a{
+        font-size: 40px;
+        color: white;
+       }
+    }
+    
+}
