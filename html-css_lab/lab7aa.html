@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON & Crypto</title>
+  <style>body { font-family: Arial; padding: 20px; } button { padding: 5px 10px; }</style>
+</head>
+<body>
+
+<h3>JSON to Object</h3>
+<textarea id="jsonInput" placeholder="enter JSON"></textarea><button onclick="convertJsonToObject()">Convert</button>
+<div id="jsonResult"></div>
+
+<h3>JSON to Date</h3>
+<input id="jsonDate" type="text"><button onclick="convertJsonToDate()">Convert</button>
+<div id="dateResult"></div>
+
+<h3>JSON to CSV</h3>
+<textarea id="jsonCsvInput"></textarea>
+<br>
+<button onclick="jsonToCsv()">Convert</button>
+<div id="csvResult"></div>
+
+<h3>Hash</h3>
+<input id="hashInput" type="text">
+<button onclick="createHash()">Create</button>
+<div id="hashResult"></div>
+
+<script>
+  function convertJsonToObject() {
+    try { 
+      const obj = JSON.parse(document.getElementById('jsonInput').value); 
+      document.getElementById('jsonResult').innerText = JSON.stringify(obj, null, 2); 
+    } catch { document.getElementById('jsonResult').innerText = 'Invalid JSON'; }
+  }
+
+  function convertJsonToDate() {
+    const date = new Date(document.getElementById('jsonDate').value);
+    document.getElementById('dateResult').innerText = date.toString();
+  }
+
+  function jsonToCsv() {
+    try {
+      const arr = JSON.parse(document.getElementById('jsonCsvInput').value);
+      const keys = Object.keys(arr[0]);
+      const csv = arr.map(row => keys.map(k => row[k]).join(',')).join('\n');
+      document.getElementById('csvResult').innerText = keys.join(',') + '\n' + csv;
+    } catch { document.getElementById('csvResult').innerText = 'Invalid JSON'; }
+  }
+
+  function createHash() {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(document.getElementById('hashInput').value);
+    crypto.subtle.digest('SHA-256', data).then(hash => {
+      const hashHex = Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+      document.getElementById('hashResult').innerText = hashHex;
+    });
+  }
+</script>
+
+</body>
+</html>
