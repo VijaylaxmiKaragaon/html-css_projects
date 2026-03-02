@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+
+  <!-- CSS Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #content {
+      margin-bottom: 20px;
+    }
+    #paragraph {
+      font-size: 16px;
+    }
+    #list {
+      font-size: 16px;
+    }
+    button {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #animatedDiv {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .box {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery Script -->
+  <script>
+    $(document).ready(function() {
+      // 1. Append content to the paragraph and list
+      $("#appendContentBtn").click(function() {
+        $("#paragraph").append(" More content added.");
+        $("#list").append("<li>Item 3</li>");
+      });
+      // 2. Change the state of the element with animate() method
+      $("#animateBtn").click(function() {
+        $("#animatedDiv")
+          .animate(
+            {
+              width: "200px",     // Expand the div's width
+              height: "200px",    // Expand the div's height
+              opacity: 0.5        // Make the div semi-transparent
+            },
+            1000 // Duration of 1 second
+          );
+      });
+      // 3. Change the color of the div during animation
+      $("#colorChangeBtn").click(function() {
+        $("#animatedDiv")
+          .animate(
+            {
+              width: "200px",     // Expand the div's width
+              height: "200px",    // Expand the div's height
+              opacity: 0.5        // Make the div semi-transparent
+            },
+            1000 // Duration of 1 second
+          )
+          .css("background-color", "orange"); // Change the color after animation
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="content">
+    <p id="paragraph">This is a simple paragraph.</p>
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <button id="appendContentBtn">Append Content</button>
+    <button id="animateBtn">Animate Element</button>
+    <button id="colorChangeBtn">Animate and Change Color</button>
+  </div>  
+ <div id="animatedDiv" class="box"></div>
+</body>
+</html>
